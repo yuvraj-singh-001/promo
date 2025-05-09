@@ -39,16 +39,29 @@
             justify-content: space-between;
             padding: 25px 12%;
         }
-        .logo img{
-            max-width: 100%;
-            width: 80px;
-            height: auto;
-            mix-blend-mode: darken;
+       .logo {
             
-
-           
-
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            animation: glitch 1s linear infinite;
         }
+         @keyframes glitch {
+    0% {
+        text-shadow: 4px 0 red, -3px 0 blue;
+    }
+  
+    50% {
+        text-shadow: -3px 0 green, 3px 0 yellow; 
+    }
+   
+    75%{
+                text-shadow: -3px 0 aqua, 3px 0 rgb(255,0,155)}
+    100% {
+        text-shadow: 4px 0 cyan, -4px 0 magenta;
+    }
+        
+}
         .navigation{
             display: flex;
             align-items: center;
@@ -550,7 +563,7 @@ color: #00ffee;
 <body>
     
     <header>
-        <a href="#" class="logo"  ><img src="logo.jpg" alt=""></a>
+        <a href="#" class="logo"  > Krishu.</a>
         <div class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">Product</a></li>
